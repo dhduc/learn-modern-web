@@ -1,0 +1,13 @@
+:root {
+    --margin-top: 100px;
+}
+
+main {
+    margin-top: var(--margin-top);
+}
+
+footer {
+    --margin-top: 50px;
+    margin-top: var(--margin-top);
+    padding: 2rem;
+}
