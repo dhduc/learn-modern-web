@@ -1,13 +1,38 @@
 :root {
-    --margin-top: 100px;
+    --light-background: #f8f9fa;
+    --dark-background: #353a40;
+    --light-color: #000;
+    --dark-color: #fff;
+
+    --background: var(--light-background);
+    --color: var(--light-color);
+}
+
+nav.navbar {
+    background: var(--background);
+}
+
+nav.navbar a {
+    color: var(--color);
 }
 
 main {
-    margin-top: var(--margin-top);
+    margin-top: 100px;
 }
 
-footer {
-    --margin-top: 50px;
-    margin-top: var(--margin-top);
+footer.footer {
+    background: var(--background);
+    margin-top: 50px;
     padding: 2rem;
+}
+
+footer.footer p {
+    color: var(--color);
+}
+
+@media all and (max-width: 768px) {
+    :root {
+         --background: var(--dark-background);
+        --color: var(--dark-color);
+    }
 }
