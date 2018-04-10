@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.container > div > img {
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+}
