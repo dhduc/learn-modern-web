@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Heading</h1>
+<script src='https://d3js.org/d3.v4.min.js'></script>
+<script>
+    // Selector
+    d3.select('h1').style('color', 'blue').attr('class', 'heading').text('Hello D3')
+    d3.select('body').append('p').text('Lorem Paragraph')
+    d3.selectAll('p').style('color', 'blue')
+
+    // Dataset
+    var dataset = [1, 2, 3, 4, 5];
+    d3.select('body')
+        .selectAll('p')
+        .data(dataset)
+        .enter()
+        .append('p')
+        .text(function (d) {
+            return d;
+        })
+</script>
+</body>
+</html>
